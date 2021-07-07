@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,7 +24,6 @@
 		F2CA79F1267F840C00E23D02 /* F1StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA79F0267F840C00E23D02 /* F1StatsApp.swift */; };
 		F2CA79F5267F840E00E23D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CA79F4267F840E00E23D02 /* Assets.xcassets */; };
 		F2CA79F8267F840E00E23D02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CA79F7267F840E00E23D02 /* Preview Assets.xcassets */; };
-		F2CA7A01267F849D00E23D02 /* Formula1API in Frameworks */ = {isa = PBXBuildFile; productRef = F2CA7A00267F849D00E23D02 /* Formula1API */; };
 		F2CA7A03267FECC700E23D02 /* F1JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA7A02267FECC700E23D02 /* F1JSONResponse.swift */; };
 		F2CA7A092680306800E23D02 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CA7A082680306800E23D02 /* Sample.json */; };
 		F2CA7A0B2680353000E23D02 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA7A0A2680353000E23D02 /* ModelData.swift */; };
@@ -78,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2CA7A01267F849D00E23D02 /* Formula1API in Frameworks */,
 				D4431A9E1AD9C3AB5112715E /* Pods_F1Stats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +237,6 @@
 			);
 			name = F1Stats;
 			packageProductDependencies = (
-				F2CA7A00267F849D00E23D02 /* Formula1API */,
 			);
 			productName = F1Stats;
 			productReference = F2CA79ED267F840C00E23D02 /* F1Stats.app */;
@@ -269,7 +266,6 @@
 			);
 			mainGroup = F2CA79E4267F840C00E23D02;
 			packageReferences = (
-				F2CA79FF267F849D00E23D02 /* XCRemoteSwiftPackageReference "Formula1API" */,
 			);
 			productRefGroup = F2CA79EE267F840C00E23D02 /* Products */;
 			projectDirPath = "";
@@ -554,25 +550,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F2CA79FF267F849D00E23D02 /* XCRemoteSwiftPackageReference "Formula1API" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gionoa/Formula1API.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F2CA7A00267F849D00E23D02 /* Formula1API */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F2CA79FF267F849D00E23D02 /* XCRemoteSwiftPackageReference "Formula1API" */;
-			productName = Formula1API;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2CA79E5267F840C00E23D02 /* Project object */;
 }

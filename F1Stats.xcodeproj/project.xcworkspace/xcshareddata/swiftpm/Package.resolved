@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Formula1API",
+        "repositoryURL": "https://github.com/gionoa/Formula1API.git",
+        "state": {
+          "branch": "master",
+          "revision": "4827d22866c8538863cac13f3f23c91884275067",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
