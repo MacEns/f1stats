@@ -3,23 +3,74 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4431A9E1AD9C3AB5112715E /* Pods_F1Stats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E5C93B5AA31F7EBE72CF156 /* Pods_F1Stats.framework */; };
+		F205EA6E2684C78C003933C0 /* DriverRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205EA6D2684C78C003933C0 /* DriverRowView.swift */; };
+		F205EA712684CD7F003933C0 /* PositionNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205EA702684CD7F003933C0 /* PositionNumberView.swift */; };
+		F205EA732684CE4D003933C0 /* PointsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205EA722684CE4D003933C0 /* PointsBar.swift */; };
+		F21AACF7268BDDC000770891 /* ConstructorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AACF6268BDDC000770891 /* ConstructorDetailView.swift */; };
+		F26BD6052695D03000ECE2BB /* GrandPrixListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26BD6042695D03000ECE2BB /* GrandPrixListView.swift */; };
+		F26BD6072695D4A700ECE2BB /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = F26BD6062695D4A700ECE2BB /* schedule.json */; };
+		F26BD6092695D51C00ECE2BB /* RaceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26BD6082695D51C00ECE2BB /* RaceTable.swift */; };
+		F26BD60C2695D90400ECE2BB /* GrandPrixRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26BD60B2695D90400ECE2BB /* GrandPrixRowView.swift */; };
+		F26BD60E2695DAF400ECE2BB /* GrandPrixDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26BD60D2695DAF400ECE2BB /* GrandPrixDetailView.swift */; };
+		F28AD8392683622100EF33ED /* constructorsStandings.json in Resources */ = {isa = PBXBuildFile; fileRef = F28AD8382683622100EF33ED /* constructorsStandings.json */; };
+		F28AD83B2683B0D300EF33ED /* ConstructorRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28AD83A2683B0D300EF33ED /* ConstructorRowView.swift */; };
+		F296E6BE26810A230036123A /* Drivers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296E6BD26810A230036123A /* Drivers.swift */; };
+		F296E6C0268187F60036123A /* ConstructorsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296E6BF268187F60036123A /* ConstructorsListView.swift */; };
 		F2CA79F1267F840C00E23D02 /* F1StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA79F0267F840C00E23D02 /* F1StatsApp.swift */; };
-		F2CA79F3267F840C00E23D02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA79F2267F840C00E23D02 /* ContentView.swift */; };
 		F2CA79F5267F840E00E23D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CA79F4267F840E00E23D02 /* Assets.xcassets */; };
 		F2CA79F8267F840E00E23D02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CA79F7267F840E00E23D02 /* Preview Assets.xcassets */; };
+		F2CA7A01267F849D00E23D02 /* Formula1API in Frameworks */ = {isa = PBXBuildFile; productRef = F2CA7A00267F849D00E23D02 /* Formula1API */; };
+		F2CA7A03267FECC700E23D02 /* F1JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA7A02267FECC700E23D02 /* F1JSONResponse.swift */; };
+		F2CA7A092680306800E23D02 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CA7A082680306800E23D02 /* Sample.json */; };
+		F2CA7A0B2680353000E23D02 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA7A0A2680353000E23D02 /* ModelData.swift */; };
+		F2CA7A0D2680368000E23D02 /* Nationalities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA7A0C2680368000E23D02 /* Nationalities.swift */; };
+		F2D81CFB268B90FB005B811A /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D81CFA268B90FB005B811A /* Constructor.swift */; };
+		F2D81CFF268B9180005B811A /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D81CFE268B9180005B811A /* Standings.swift */; };
+		F2D8CB75268BD61B00411A50 /* DriverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8CB74268BD61B00411A50 /* DriverDetailView.swift */; };
+		F2DE0A902680BBF500036449 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE0A8F2680BBF500036449 /* RootView.swift */; };
+		F2DE0A922680BF0500036449 /* DriversListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE0A912680BF0500036449 /* DriversListView.swift */; };
+		F2DE0A962680BF9D00036449 /* driversStandings.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DE0A952680BF9D00036449 /* driversStandings.json */; };
+		F2E3F6C6269489C50072B552 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3F6C5269489C50072B552 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7188FC0523D2D5D275A09F86 /* Pods-F1Stats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-F1Stats.release.xcconfig"; path = "Target Support Files/Pods-F1Stats/Pods-F1Stats.release.xcconfig"; sourceTree = "<group>"; };
+		8E5C93B5AA31F7EBE72CF156 /* Pods_F1Stats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_F1Stats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F205EA6D2684C78C003933C0 /* DriverRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverRowView.swift; sourceTree = "<group>"; };
+		F205EA702684CD7F003933C0 /* PositionNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionNumberView.swift; sourceTree = "<group>"; };
+		F205EA722684CE4D003933C0 /* PointsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsBar.swift; sourceTree = "<group>"; };
+		F21AACF6268BDDC000770891 /* ConstructorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorDetailView.swift; sourceTree = "<group>"; };
+		F26BD6042695D03000ECE2BB /* GrandPrixListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandPrixListView.swift; sourceTree = "<group>"; };
+		F26BD6062695D4A700ECE2BB /* schedule.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schedule.json; sourceTree = "<group>"; };
+		F26BD6082695D51C00ECE2BB /* RaceTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTable.swift; sourceTree = "<group>"; };
+		F26BD60B2695D90400ECE2BB /* GrandPrixRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandPrixRowView.swift; sourceTree = "<group>"; };
+		F26BD60D2695DAF400ECE2BB /* GrandPrixDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandPrixDetailView.swift; sourceTree = "<group>"; };
+		F28AD8382683622100EF33ED /* constructorsStandings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = constructorsStandings.json; sourceTree = "<group>"; };
+		F28AD83A2683B0D300EF33ED /* ConstructorRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorRowView.swift; sourceTree = "<group>"; };
+		F296E6BD26810A230036123A /* Drivers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drivers.swift; sourceTree = "<group>"; };
+		F296E6BF268187F60036123A /* ConstructorsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorsListView.swift; sourceTree = "<group>"; };
 		F2CA79ED267F840C00E23D02 /* F1Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1Stats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CA79F0267F840C00E23D02 /* F1StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1StatsApp.swift; sourceTree = "<group>"; };
-		F2CA79F2267F840C00E23D02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2CA79F4267F840E00E23D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2CA79F7267F840E00E23D02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2CA79F9267F840E00E23D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CA7A02267FECC700E23D02 /* F1JSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1JSONResponse.swift; sourceTree = "<group>"; };
+		F2CA7A082680306800E23D02 /* Sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sample.json; sourceTree = "<group>"; };
+		F2CA7A0A2680353000E23D02 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		F2CA7A0C2680368000E23D02 /* Nationalities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nationalities.swift; sourceTree = "<group>"; };
+		F2D81CFA268B90FB005B811A /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
+		F2D81CFE268B9180005B811A /* Standings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
+		F2D8CB74268BD61B00411A50 /* DriverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailView.swift; sourceTree = "<group>"; };
+		F2DE0A8F2680BBF500036449 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F2DE0A912680BF0500036449 /* DriversListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversListView.swift; sourceTree = "<group>"; };
+		F2DE0A952680BF9D00036449 /* driversStandings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = driversStandings.json; sourceTree = "<group>"; };
+		F2E3F6C5269489C50072B552 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		FB7FE2F9AA592AAC6B3A2330 /* Pods-F1Stats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-F1Stats.debug.xcconfig"; path = "Target Support Files/Pods-F1Stats/Pods-F1Stats.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +78,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CA7A01267F849D00E23D02 /* Formula1API in Frameworks */,
+				D4431A9E1AD9C3AB5112715E /* Pods_F1Stats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0498E9482686089D00C61371 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3F6C5269489C50072B552 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		779259A396BAA7AB9A48250F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E5C93B5AA31F7EBE72CF156 /* Pods_F1Stats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		824249313E00DDF82CDB742C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB7FE2F9AA592AAC6B3A2330 /* Pods-F1Stats.debug.xcconfig */,
+				7188FC0523D2D5D275A09F86 /* Pods-F1Stats.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F205EA6F2684CD64003933C0 /* Component Views */ = {
+			isa = PBXGroup;
+			children = (
+				F205EA702684CD7F003933C0 /* PositionNumberView.swift */,
+				F205EA722684CE4D003933C0 /* PointsBar.swift */,
+			);
+			path = "Component Views";
+			sourceTree = "<group>";
+		};
+		F26BD6032695D00E00ECE2BB /* Grand Prix */ = {
+			isa = PBXGroup;
+			children = (
+				F26BD6042695D03000ECE2BB /* GrandPrixListView.swift */,
+				F26BD60B2695D90400ECE2BB /* GrandPrixRowView.swift */,
+				F26BD60D2695DAF400ECE2BB /* GrandPrixDetailView.swift */,
+			);
+			path = "Grand Prix";
+			sourceTree = "<group>";
+		};
 		F2CA79E4267F840C00E23D02 = {
 			isa = PBXGroup;
 			children = (
 				F2CA79EF267F840C00E23D02 /* F1Stats */,
 				F2CA79EE267F840C00E23D02 /* Products */,
+				824249313E00DDF82CDB742C /* Pods */,
+				779259A396BAA7AB9A48250F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,10 +152,16 @@
 			isa = PBXGroup;
 			children = (
 				F2CA79F0267F840C00E23D02 /* F1StatsApp.swift */,
-				F2CA79F2267F840C00E23D02 /* ContentView.swift */,
+				F2CA7A1D26803BBE00E23D02 /* View */,
+				F2CA7A04267FECD100E23D02 /* Model */,
+				0498E9482686089D00C61371 /* Networking */,
 				F2CA79F4267F840E00E23D02 /* Assets.xcassets */,
 				F2CA79F9267F840E00E23D02 /* Info.plist */,
 				F2CA79F6267F840E00E23D02 /* Preview Content */,
+				F2CA7A082680306800E23D02 /* Sample.json */,
+				F28AD8382683622100EF33ED /* constructorsStandings.json */,
+				F2DE0A952680BF9D00036449 /* driversStandings.json */,
+				F26BD6062695D4A700ECE2BB /* schedule.json */,
 			);
 			path = F1Stats;
 			sourceTree = "<group>";
@@ -69,6 +174,52 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F2CA7A04267FECD100E23D02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2CA7A0A2680353000E23D02 /* ModelData.swift */,
+				F2CA7A02267FECC700E23D02 /* F1JSONResponse.swift */,
+				F2D81CFE268B9180005B811A /* Standings.swift */,
+				F296E6BD26810A230036123A /* Drivers.swift */,
+				F2D81CFA268B90FB005B811A /* Constructor.swift */,
+				F26BD6082695D51C00ECE2BB /* RaceTable.swift */,
+				F2CA7A0C2680368000E23D02 /* Nationalities.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2CA7A1D26803BBE00E23D02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2DE0A8F2680BBF500036449 /* RootView.swift */,
+				F2DE0A942680BF1100036449 /* Constructors */,
+				F2DE0A932680BF0900036449 /* Drivers */,
+				F26BD6032695D00E00ECE2BB /* Grand Prix */,
+				F205EA6F2684CD64003933C0 /* Component Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2DE0A932680BF0900036449 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				F2DE0A912680BF0500036449 /* DriversListView.swift */,
+				F205EA6D2684C78C003933C0 /* DriverRowView.swift */,
+				F2D8CB74268BD61B00411A50 /* DriverDetailView.swift */,
+			);
+			path = Drivers;
+			sourceTree = "<group>";
+		};
+		F2DE0A942680BF1100036449 /* Constructors */ = {
+			isa = PBXGroup;
+			children = (
+				F296E6BF268187F60036123A /* ConstructorsListView.swift */,
+				F28AD83A2683B0D300EF33ED /* ConstructorRowView.swift */,
+				F21AACF6268BDDC000770891 /* ConstructorDetailView.swift */,
+			);
+			path = Constructors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +227,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2CA79FC267F840E00E23D02 /* Build configuration list for PBXNativeTarget "F1Stats" */;
 			buildPhases = (
+				94EEF1D7FE724EF55DBD70A5 /* [CP] Check Pods Manifest.lock */,
 				F2CA79E9267F840C00E23D02 /* Sources */,
 				F2CA79EA267F840C00E23D02 /* Frameworks */,
 				F2CA79EB267F840C00E23D02 /* Resources */,
+				B319514FC53558FD7A2C57BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = F1Stats;
+			packageProductDependencies = (
+				F2CA7A00267F849D00E23D02 /* Formula1API */,
+			);
 			productName = F1Stats;
 			productReference = F2CA79ED267F840C00E23D02 /* F1Stats.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +268,9 @@
 				Base,
 			);
 			mainGroup = F2CA79E4267F840C00E23D02;
+			packageReferences = (
+				F2CA79FF267F849D00E23D02 /* XCRemoteSwiftPackageReference "Formula1API" */,
+			);
 			productRefGroup = F2CA79EE267F840C00E23D02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,20 +285,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28AD8392683622100EF33ED /* constructorsStandings.json in Resources */,
 				F2CA79F8267F840E00E23D02 /* Preview Assets.xcassets in Resources */,
+				F26BD6072695D4A700ECE2BB /* schedule.json in Resources */,
 				F2CA79F5267F840E00E23D02 /* Assets.xcassets in Resources */,
+				F2CA7A092680306800E23D02 /* Sample.json in Resources */,
+				F2DE0A962680BF9D00036449 /* driversStandings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94EEF1D7FE724EF55DBD70A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-F1Stats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B319514FC53558FD7A2C57BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-F1Stats/Pods-F1Stats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-F1Stats/Pods-F1Stats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-F1Stats/Pods-F1Stats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2CA79E9267F840C00E23D02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2CA79F3267F840C00E23D02 /* ContentView.swift in Sources */,
+				F2CA7A03267FECC700E23D02 /* F1JSONResponse.swift in Sources */,
+				F28AD83B2683B0D300EF33ED /* ConstructorRowView.swift in Sources */,
+				F26BD6052695D03000ECE2BB /* GrandPrixListView.swift in Sources */,
+				F2CA7A0B2680353000E23D02 /* ModelData.swift in Sources */,
+				F205EA732684CE4D003933C0 /* PointsBar.swift in Sources */,
+				F26BD6092695D51C00ECE2BB /* RaceTable.swift in Sources */,
+				F2D81CFF268B9180005B811A /* Standings.swift in Sources */,
+				F296E6BE26810A230036123A /* Drivers.swift in Sources */,
+				F2DE0A902680BBF500036449 /* RootView.swift in Sources */,
+				F2E3F6C6269489C50072B552 /* NetworkingManager.swift in Sources */,
 				F2CA79F1267F840C00E23D02 /* F1StatsApp.swift in Sources */,
+				F26BD60C2695D90400ECE2BB /* GrandPrixRowView.swift in Sources */,
+				F296E6C0268187F60036123A /* ConstructorsListView.swift in Sources */,
+				F205EA6E2684C78C003933C0 /* DriverRowView.swift in Sources */,
+				F2DE0A922680BF0500036449 /* DriversListView.swift in Sources */,
+				F2D81CFB268B90FB005B811A /* Constructor.swift in Sources */,
+				F205EA712684CD7F003933C0 /* PositionNumberView.swift in Sources */,
+				F2CA7A0D2680368000E23D02 /* Nationalities.swift in Sources */,
+				F21AACF7268BDDC000770891 /* ConstructorDetailView.swift in Sources */,
+				F26BD60E2695DAF400ECE2BB /* GrandPrixDetailView.swift in Sources */,
+				F2D8CB75268BD61B00411A50 /* DriverDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +488,7 @@
 		};
 		F2CA79FD267F840E00E23D02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7FE2F9AA592AAC6B3A2330 /* Pods-F1Stats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +511,7 @@
 		};
 		F2CA79FE267F840E00E23D02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7188FC0523D2D5D275A09F86 /* Pods-F1Stats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,6 +554,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2CA79FF267F849D00E23D02 /* XCRemoteSwiftPackageReference "Formula1API" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gionoa/Formula1API.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2CA7A00267F849D00E23D02 /* Formula1API */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2CA79FF267F849D00E23D02 /* XCRemoteSwiftPackageReference "Formula1API" */;
+			productName = Formula1API;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2CA79E5267F840C00E23D02 /* Project object */;
 }

@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct F1StatsApp: App {
+    @StateObject var modelData = ModelData()
     var body: some Scene {
+        
+        
+        
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(modelData)
+                
         }
     }
 }
